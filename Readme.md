@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Anastasia Osina](https://up.htmlacademy.ru/adaptive/25/user/1665303).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Савотиков](https://htmlacademy.ru/profile/id98316).
 
 ---
 

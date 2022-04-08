@@ -48,79 +48,83 @@
         <h2 class="description__title">Оставьте свой отзыв</h2>
         <p class="description__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
       
-        <section class="name">
-          <h2 class="name__call">Представьтесь:</h2>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru/">
 
-          <label class="name__name-label" for="name">Имя*:</label>
-          <input class="name__name-input" type="text" id="name" name="name" required value="Пётр">
-
-          <label class="name__surname-label" for="surname">Фамилия*:</label>
-          <input class="name__surname-input" type="text" id="surname" name="surname" required value="Пустота">
-
-          <label class="name__father-name-label" for="father-name">Отчество:</label>
-          <input class="name_father-name-input" type="text" id="father-name" name="father-name" value="Викторович">
-        </section>
-        <section class="contacts">
-          <h2 class="contacts__title">Контактная информация:</h2>
-
-          <label class="contacts__phone-label" for="phone">Контактный телефон*:</label>
-          <input class="contacts__phone-input" type="text" id="phone" name="phone" required value="Введите телефон">
-
-          <label class="contacts__email-label" for="email">Электронная почта*:</label>
-          <input class="contacts__email-input" type="text" id="email" name="email" required value="Введите email">
+          <section class="feedback-form__section">
+            <h2 class="feedback-form__title">Представьтесь:</h2>
+  
+            <label class="feedback-form__label" for="name">Имя*:</label>
+            <input class="feedback-form__input" type="text" id="name" name="name" required value="Пётр">
+  
+            <label class="feedback-form__label" for="surname">Фамилия*:</label>
+            <input class="feedback-form__input" type="text" id="surname" name="surname" required value="Пустота">
+  
+            <label class="feedback-form__label" for="father-name">Отчество:</label>
+            <input class="feedback-form__input" type="text" id="father-name" name="father-name" value="Викторович">
+          </section>
+          <section class="feedback-form__section">
+            <h2 class="feedback-form__title">Контактная информация:</h2>
+  
+            <label class="feedback-form__label" for="phone">Контактный телефон*:</label>
+            <input class="feedback-form__input" type="text" id="phone" name="phone" required value="Введите телефон">
+  
+            <label class="feedback-form__label" for="email">Электронная почта*:</label>
+            <input class="feedback-form__input" type="text" id="email" name="email" required value="Введите email">
+          
+          </section>
+          <section class="feedback-form__section">
+  
+            <h2 class="feedback-form__title">Ваше общее впечатление:</h2>
+            
+            <div class="feedback-form__option">
+              <input class="feedback-form__label" type="radio" id="good">
+              <label class="feedback-form__input" for="good">Скорее положительное</label>
+            </div>
+            
+            <div class="feedback-form__option">
+              <input class="feedback-form__label" type="radio" id="bad">
+              <label class="feedback-form__input" for="bad">Скорее отрицательное</label>
+            </div>
+            
+            <div class="feedback-form__option">
+              <input class="feedback-form__label" type="radio" id="donot-know">
+              <label class="feedback-form__input" for="donot-know">Затрудняюсь ответить</label>
+            </div>
+            
+          </section>
+          <section class="feedback-form__section">
+  
+            <h2 class="feedback-form__title">Посещенные достопримечательности:</h2>
+  
+            <div class="feedback-form__place">
+              <input class="feedback-form__input" type="checkbox" id="bridge" name="bridge" checked>
+              <label class="feedback-form__label" for="bridge">Мост Дьявола</label> 
+            </div>
+            
+            <div class="feedback-form__place">
+              <input class="feedback-form__input" type="checkbox" id="mounting" name="mounting" checked>
+              <label class="feedback-form__label" for="mounting">Гора-Колокол</label> 
+            </div>
+  
+            <div class="feedback-form__place">
+              <input class="feedback-form__input" type="checkbox" id="park" name="park" checked>
+              <label class="feedback-form__label" for="park">Слайд-парк</label> 
+            </div>
+  
+            <div class="feedback-form__place">
+              <input class="feedback-form__input" type="checkbox" id="rocks" name="rocks">
+              <label class="feedback-form__label" for="rocks">Красные скалы</label> 
+            </div>    
+            
+          </section>
+  
+          <section class="feedback-form__section">
+            <h2 class="feedback-form__title">Опишите свои эмоции:</h2>
+  
+            <textarea class="feedback-form__text" name="emotions" rows="5" cols="33">Опишите подробно все свои восторги</textarea>
+          </section>
+        </form>
         
-        </section>
-        <section class="impression">
-
-          <h2 class="impression__title">Ваше общее впечатление:</h2>
-          
-          <div class="impression__option">
-            <input class="impression__input" type="radio" id="good">
-            <label class="impression__label" for="good">Скорее положительное</label>
-          </div>
-          
-          <div class="impression__option">
-            <input class="impression__input" type="radio" id="bad">
-            <label class="impression__label" for="bad">Скорее отрицательное</label>
-          </div>
-          
-          <div class="impression__option">
-            <input class="impression__input" type="radio" id="donot-know">
-            <label class="impression__label" for="donot-know">Затрудняюсь ответить</label>
-          </div>
-          
-        </section>
-        <section class="sightseeing">
-
-          <h2 class="sightseeing__title">Посещенные достопримечательности:</h2>
-
-          <div class="sightseeing__place">
-            <input class="sightseeing__input" type="checkbox" id="bridge" name="bridge" checked>
-            <label class="sightseeing__label" for="bridge">Мост Дьявола</label> 
-          </div>
-          
-          <div class="sightseeing__place">
-            <input class="sightseeing__input" type="checkbox" id="mounting" name="mounting" checked>
-            <label class="sightseeing__label" for="mounting">Гора-Колокол</label> 
-          </div>
-
-          <div class="sightseeing__place">
-            <input class="sightseeing__input" type="checkbox" id="park" name="park" checked>
-            <label class="sightseeing__label" for="park">Слайд-парк</label> 
-          </div>
-
-          <div class="sightseeing__place">
-            <input class="sightseeing__input" type="checkbox" id="rocks" name="rocks">
-            <label class="sightseeing__label" for="rocks">Красные скалы</label> 
-          </div>    
-          
-        </section>
-
-        <section class="emotions">
-          <h2 class="emotions__title">Опишите свои эмоции:</h2>
-
-          <textarea name="emotions" rows="5" cols="33">Опишите подробно все свои восторги</textarea>
-        </section>
 
       </section>
 
